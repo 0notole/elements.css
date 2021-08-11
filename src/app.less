@@ -1,0 +1,63 @@
+@gap: 35px;
+@corner: 12px;
+
+@black: #292f36; // Gunmetal
+@light: #f1f4f8; // Cultured
+@teal: #4ecdc4; // Medium Turquoise
+@blue: #007cbe; // Star Command Blue
+@red: #ff6b6b; // Bittersweet
+@yellow: #fbaf00; // Honey Yellow
+@green: #00af54; // Green Pantone
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+@import 'mixins';
+@import 'helpers';
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+
+    color: @black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+{
+    margin-top: 0;
+    &:not(.box)
+    {
+        margin-bottom: 0;
+    }
+}
+
+::-moz-selection
+{
+    color: @black;
+    background: @teal;
+}
+
+::selection
+{
+    color: @black;
+    background: @teal;
+}
+
+@import 'blocks/box';
+@import 'blocks/button';
+@import 'blocks/card';
+@import 'blocks/checkbox';
+@import 'blocks/column';
+@import 'blocks/input';
+@import 'blocks/label';
+@import 'blocks/link';
+@import 'blocks/progress';
+@import 'blocks/section';
+@import 'blocks/tab';
+@import 'blocks/text';
+@import 'blocks/title';
+@import 'blocks/toggle';

@@ -1,0 +1,42 @@
+{
+    "name": "elements",
+    "version": "1.0.0",
+    "description": "A simple yet powerful frontend UI kit built with CSS blocks, elements and modifiers, and smartly assembled into a lightweight library.",
+    "main": "webpack.mix.js",
+    "dependencies": {
+        "laravel-mix": "^6.0.27",
+        "less": "^4.1.1",
+        "less-loader": "^10.0.1"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.27",
+        "less": "^4.1.1",
+        "less-loader": "^10.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0notole/elements.git"
+    },
+    "keywords": [
+        "ui",
+        "css",
+        "bem",
+        "html",
+        "elements"
+    ],
+    "author": "Anatoly Silko",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/0notole/elements/issues"
+    },
+    "homepage": "https://github.com/0notole/elements#readme"
+}
