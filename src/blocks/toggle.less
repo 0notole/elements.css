@@ -1,0 +1,66 @@
+.toggle
+{
+    display: none;
+
+    user-select: none;
+
+    &:checked
+    {
+        & + label:after
+        {
+            left: ((@gap / 2) - 2px);
+        }
+        & + label:before
+        {
+            border-color: @green;
+            background-color: @green;
+        }
+    }
+
+    & + label
+    {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+        user-select: none;
+
+        .text();
+
+        &:after
+        {
+            position: absolute;
+            left: 4px;
+
+            width: ((@gap / 2) - 2px);
+            height: ((@gap / 2) - 2px);
+
+            content: '';
+            transition: all @duration;
+
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        &:before
+        {
+            display: inline-block;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            box-sizing: border-box;
+            width: (@gap);
+            height: (@gap * .6);
+            margin-right: (@gap / 4);
+
+            content: '';
+            transition: all @duration;
+
+            border: 2px solid @grey;
+            border-radius: @corner;
+            background: @grey;
+        }
+    }
+}

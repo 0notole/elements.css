@@ -2,3 +2,23 @@
 {
     box-shadow: 0 10px 30px fade(@black, 5%);
 }
+
+.text ()
+{
+    line-height: 175%;
+}
+
+.text-reduction (@size)
+{
+    font-size: @size;
+
+    .md({
+        font-size: (@size * .9);
+    });
+    .sm({
+        font-size: (@size * .8);
+    });
+    .xs({
+        font-size: (@size * .7);
+    });
+}
