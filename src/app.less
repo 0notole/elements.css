@@ -1,7 +1,11 @@
-@gap: 35px;
-@corner: 12px;
+@gap: 45px;
+@gapSmall: @gap * .6;
+@corner: 20px;
+@font: 15px;
+@widthMin: 320px;
 
 @black: #292f36; // Gunmetal
+@grey: #606f80; // Dark Electric Blue
 @light: #f1f4f8; // Cultured
 @teal: #4ecdc4; // Medium Turquoise
 @blue: #007cbe; // Star Command Blue
@@ -13,13 +17,17 @@
 
 @import 'mixins';
 @import 'helpers';
+@import 'media';
 
 body
 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: @font;
 
-    color: @black;
+    min-width: @widthMin;
+
+    color: @grey;
+    background-color: @light;
 }
 
 h1,

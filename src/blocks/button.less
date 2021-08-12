@@ -1,22 +1,57 @@
 .button
 {
+    font-size: (@font * .8);
     font-weight: bold;
     line-height: @gap;
 
     display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
 
     box-sizing: border-box;
     max-width: 100%;
     height: @gap;
-    padding: 0 (@gap);
+    padding: 0 @gap;
 
     cursor: pointer;
     vertical-align: top;
     white-space: nowrap;
     text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
     color: white;
     border-radius: @corner;
     outline: none;
     background-color: @black;
+
+    .xs({
+        padding: 0 @gapSmall;
+    });
+
+    &.fa
+    {
+        width: @gap;
+        padding: 0;
+
+        text-align: center;
+    }
+
+    & > i
+    {
+        &:last-child
+        {
+            margin-left: (@gap / 5);
+        }
+        &:first-child
+        {
+            margin-right: (@gap / 5);
+        }
+        &:last-child:first-child
+        {
+            margin: 0 !important;
+
+            pointer-events: none;
+        }
+    }
 }

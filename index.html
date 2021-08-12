@@ -6,15 +6,37 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="elements.min.css">
     </head>
     <body>
         <section class="section column">
             <h1 class="title">Elements</h1>
         </section>
-        <section class="section section_light">
+        <section class="section">
             <div class="column">
-                <a href="#" class="button" onclick="this.classList.add('button_loading'); return false;">Click me</a>
+
+                <div class="box">
+                    <a href="#" class="button" onclick="this.classList.add('button_loading'); return false;">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>Click me</span>
+                    </a>
+                    <a href="#" class="button fa fa-arrow-right" onclick="this.classList.add('button_loading'); return false;"></a>
+                </div>
+
+                <div class="row box">
+                    <div class="col-xs-12 col-md-4 col-lg-4">
+                        <div class="card shadow">
+                            <div class="label box">Demo Label</div>
+                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates doloribus qui a perspiciatis est aspernatur ipsam tempora illo! Quia minus itaque ipsum enim suscipit! Dolor fugiat nobis iusto animi!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="title">Ubuntu</div>
+                </div>
+
             </div>
         </section>
     </body>
