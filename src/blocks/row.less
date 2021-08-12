@@ -1,0 +1,21 @@
+.row
+{
+    &:not(.box):not(.box_small)
+    {
+        margin-bottom: (-1 * @gap);
+    }
+    &.box,
+    &.box_small
+    {
+        margin-bottom: 0;
+    }
+    & > div
+    {
+        margin-bottom: (@gap);
+
+        & > .card
+        {
+            height: 100%;
+        }
+    }
+}
