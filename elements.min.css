@@ -110,6 +110,51 @@ h5:not(.box):not(.box_small) {
   margin: 0 !important;
   pointer-events: none;
 }
+.button_loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.75;
+  color: transparent !important;
+}
+.button_loading:before {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 11.25px;
+  height: 11.25px;
+  margin-top: -5.625px;
+  margin-left: -5.625px;
+  content: '';
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border: 2px solid white;
+  border-top-color: transparent !important;
+  border-radius: 50%;
+}
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .card {
   box-sizing: border-box;
   padding: 45px;
