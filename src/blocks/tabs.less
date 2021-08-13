@@ -1,0 +1,85 @@
+.tabs
+{
+    font-size: (@font * .8);
+    font-weight: bold;
+    line-height: @gap;
+
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    height: @gap;
+
+    user-select: none;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-radius: @corner;
+    background-color: white;
+
+    .shadow();
+
+    input
+    {
+        position: absolute;
+        left: -9999px;
+
+        &:checked + label
+        {
+            color: white;
+        }
+
+        .loop(10);
+
+    }
+
+    &__glider
+    {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+
+        height: inherit;
+
+        transition: transform @duration;
+        transform: translate(0);
+
+        border-radius: @corner;
+        background: @blue;
+
+        .shadow(@blue, 50%);
+    }
+
+    label
+    {
+        z-index: 1;
+
+        flex: 1;
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+        transition: color @duration;
+        text-align: center;
+
+        border-radius: @corner;
+    }
+}
+
+.loop (@counter) when (@counter > 0) {
+    .loop((@counter - 1));
+
+    @current: @counter + 1;
+
+    &:nth-of-type(@{counter}) ~ .tabs__glider
+    {
+        width: (100% / @counter);
+    }
+    &:nth-of-type(@{current}):checked ~ .tabs__glider
+    {
+        transform: translate((@counter * 100%));
+    }
+
+}

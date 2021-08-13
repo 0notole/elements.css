@@ -1,6 +1,6 @@
-.shadow ()
+.shadow (@color: @black, @opacity: 5%)
 {
-    box-shadow: 0 10px 30px fade(@black, 5%);
+    box-shadow: 0 10px 30px fade(@color, @opacity);
 }
 
 .text ()
@@ -21,4 +21,13 @@
     .xs({
         font-size: (@size * .7);
     });
+}
+
+
+.button (@modifier, @color)
+{
+    &_@{modifier} {
+        border-color: @color !important;
+        background-color: @color !important;
+    }
 }
