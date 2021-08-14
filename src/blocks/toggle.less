@@ -1,23 +1,30 @@
 .toggle
 {
-    display: none;
-
-    user-select: none;
-
-    &:checked
+    input
     {
-        & + label:after
+        position: absolute;
+
+        user-select: none;
+
+                appearance: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+    }
+
+    input:checked
+    {
+        & + span:after
         {
             left: ((@gap / 2) - 2px);
         }
-        & + label:before
+        & + span:before
         {
             border-color: @green;
             background-color: @green;
         }
     }
 
-    & + label
+    span
     {
         position: relative;
 
