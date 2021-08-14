@@ -1,16 +1,23 @@
 .checkbox
 {
-    display: none;
+    input
+    {
+        position: absolute;
 
-    user-select: none;
+        user-select: none;
 
-    &:checked + label:before
+                appearance: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+    }
+
+    input:checked + span:before
     {
         border-color: @green;
         background-color: @green;
     }
 
-    & + label
+    span
     {
         position: relative;
 
@@ -21,7 +28,6 @@
         user-select: none;
 
         .text();
-
 
         &:after
         {
