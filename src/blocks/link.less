@@ -1,5 +1,17 @@
 .text a,
 .link
 {
+    text-decoration: none;
+
     color: @blue;
+
+    &:active
+    {
+        color: @yellow;
+        border-color: @yellow;
+    }
+    & > i
+    {
+        font-size: .8em;
+    }
 }
