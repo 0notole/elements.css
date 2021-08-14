@@ -24,10 +24,17 @@
 }
 
 
-.button (@modifier, @color)
+.button (@modifier, @color, @text: white)
 {
     &_@{modifier} {
+
+        color: @text;
         border-color: @color !important;
         background-color: @color !important;
+
+        &:before {
+            border-color: @text !important;
+        }
+
     }
 }

@@ -17,11 +17,21 @@
             <div class="column">
 
                 <div class="box">
-                    <a href="#" class="button" onclick="this.classList.add('button_loading'); return false;">
+                    <a href="#" class="button">
                         <i class="fas fa-hand-pointer"></i>
                         <span>Click me</span>
                     </a>
-                    <a href="#" class="button button_blue fa fa-arrow-right" onclick="this.classList.add('button_loading'); return false;"></a>
+
+                    <div class="button button_black">black</div>
+                    <div class="button button_grey">grey</div>
+                    <div class="button button_light shadow">light</div>
+                    <div class="button button_teal">teal</div>
+                    <div class="button button_blue">blue</div>
+                    <div class="button button_red">Delete</div>
+                    <div class="button button_yellow">Warning</div>
+                    <div class="button button_green">OK</div>
+
+                    <a href="#" class="button button_blue fa fa-arrow-right"></a>
                 </div>
 
                 <div class="box tabs">
@@ -78,5 +88,15 @@
 
             </div>
         </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.button').click(function (e) {
+                    e.preventDefault();
+                    $(this).addClass('button_loading');
+                });
+            });
+        </script>
     </body>
 </html>

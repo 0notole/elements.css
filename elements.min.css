@@ -95,9 +95,69 @@ h5:not(.box):not(.box_small) {
     padding: 0 22.5px;
   }
 }
+.button_black {
+  color: white;
+  border-color: #292f36 !important;
+  background-color: #292f36 !important;
+}
+.button_black:before {
+  border-color: white !important;
+}
+.button_grey {
+  color: white;
+  border-color: #606f80 !important;
+  background-color: #606f80 !important;
+}
+.button_grey:before {
+  border-color: white !important;
+}
+.button_light {
+  color: #292f36;
+  border-color: #f1f4f8 !important;
+  background-color: #f1f4f8 !important;
+}
+.button_light:before {
+  border-color: #292f36 !important;
+}
+.button_teal {
+  color: white;
+  border-color: #4ecdc4 !important;
+  background-color: #4ecdc4 !important;
+}
+.button_teal:before {
+  border-color: white !important;
+}
 .button_blue {
+  color: white;
   border-color: #007cbe !important;
   background-color: #007cbe !important;
+}
+.button_blue:before {
+  border-color: white !important;
+}
+.button_red {
+  color: white;
+  border-color: #ff6b6b !important;
+  background-color: #ff6b6b !important;
+}
+.button_red:before {
+  border-color: white !important;
+}
+.button_yellow {
+  color: white;
+  border-color: #fbaf00 !important;
+  background-color: #fbaf00 !important;
+}
+.button_yellow:before {
+  border-color: white !important;
+}
+.button_green {
+  color: white;
+  border-color: #00af54 !important;
+  background-color: #00af54 !important;
+}
+.button_green:before {
+  border-color: white !important;
 }
 .button.fa {
   width: 45px;
