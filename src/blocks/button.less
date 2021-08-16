@@ -32,10 +32,11 @@
     .xs({
         padding: 0 (@gap / 2);
     });
+    .button(white, white, @black);
     .button(black, @black);
     .button(grey, @grey);
     .button(light, @light, @black);
-    .button(teal, @teal);
+    .button(teal, @teal, @black);
     .button(blue, @blue);
     .button(red, @red);
     .button(yellow, @yellow);
@@ -43,7 +44,11 @@
 
     &.fa
     {
+        flex-grow: 0;
+        flex-shrink: 0;
+
         width: @gap;
+        min-width: @gap;
         padding: 0;
 
         text-align: center;

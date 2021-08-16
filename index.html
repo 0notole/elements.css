@@ -11,7 +11,6 @@
         <style>
             body {
                 position: relative;
-                min-width: 100%;
             }
             body:before {
                 content: "";
@@ -28,7 +27,14 @@
     </head>
     <body>
         <section class="section column">
-            <h1 class="title">Elements</h1>
+            <div class="row middle-xs">
+                <div class="col-xs-8">
+                    <h1 class="title">Elements</h1>
+                </div>
+                <div class="col-xs-4 end-xs">
+                    <a href="#" class="button button_white shadow indicator fa fa-bell" indicator></a>
+                </div>
+            </div>
         </section>
         <section class="section">
             <div class="column">
@@ -60,7 +66,7 @@
                             <span>Click me</span>
                         </a>
 
-                        <div class="button button_black">black</div>
+                        <div class="button button_black indicator" indicator="2">black</div>
                         <div class="button button_grey">grey</div>
                         <div class="button button_light shadow">light</div>
                         <div class="button button_teal">teal</div>

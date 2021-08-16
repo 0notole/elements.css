@@ -1,0 +1,58 @@
+.indicator
+{
+    position: relative;
+
+    &[indicator='']:after
+    {
+        top: 0;
+        right: 0;
+
+        width: 12px;
+        height: 12px;
+    }
+
+    &:after
+    {
+        font-size: 11px;
+        line-height: 18px;
+
+        position: absolute;
+        top: -3px;
+        right: -3px;
+
+        display: block;
+        overflow: hidden;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        width: 18px;
+        height: 18px;
+
+        content: attr(indicator);
+        user-select: none;
+        transform: scale(0);
+        animation-name: appear;
+        animation-duration: @duration;
+        animation-delay: @duration;
+        text-align: center;
+        pointer-events: none;
+
+        color: white;
+        border-radius: 50%;
+        background-color: @red;
+
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes appear
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
