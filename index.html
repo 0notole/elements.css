@@ -22,6 +22,7 @@
                 width: 100%;
                 transform: skewY(-10deg);
                 position: absolute;
+                z-index: -1;
             }
         </style>
     </head>
@@ -56,7 +57,7 @@
                 </div>
 
 
-                <div class="card card_blur">
+                <div class="card blur">
 
 
 
@@ -68,7 +69,7 @@
 
                         <div class="button button_black indicator" indicator="2">black</div>
                         <div class="button button_grey">grey</div>
-                        <div class="button button_light shadow">light</div>
+                        <div class="button button_white shadow">light</div>
                         <div class="button button_teal">teal</div>
                         <div class="button button_blue">blue</div>
                         <div class="button button_red">Delete</div>
@@ -94,7 +95,7 @@
                         </div>
 
                         <div class="col-xs-12 col-md-6 col-lg-4">
-                            <div class="card box">
+                            <div class="card box shadow">
                                 <div class="label box">Demo Label</div>
 
                                 <div class="box tabs">
@@ -109,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-4">
-                            <div class="card box">
+                            <div class="card box shadow">
                                 <div class="label box">Basic Text</div>
                                 <div class="box_small title">H1 Main Title</div>
                                 <div class="box title title_small">H2 Smaller</div>
@@ -127,6 +128,11 @@
                             </div>
                         </div>
 
+                        <div class="col-xs-12 col-md-6 col-lg-4">
+                            <div class="card loading shadow"></div>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -139,7 +145,7 @@
             $(document).ready(function () {
                 $('.button').click(function (e) {
                     e.preventDefault();
-                    $(this).addClass('button_loading');
+                    $(this).addClass('loading');
                 });
             });
         </script>

@@ -16,6 +16,7 @@
     padding: 0 @gap;
 
     cursor: pointer;
+    user-select: none;
     transition: padding @duration;
     text-align: center;
     vertical-align: top;
@@ -32,8 +33,8 @@
     .xs({
         padding: 0 (@gap / 2);
     });
-    .button(white, white, @black);
     .button(black, @black);
+    .button(white, white, @black);
     .button(grey, @grey);
     .button(light, @light, @black);
     .button(teal, @teal, @black);
@@ -70,51 +71,5 @@
 
             pointer-events: none;
         }
-    }
-
-    &_loading
-    {
-        position: relative;
-
-        pointer-events: none;
-
-        opacity: .75;
-        color: transparent !important;
-
-        &:before
-        {
-            position: absolute;
-            z-index: 2;
-            top: 50%;
-            left: 50%;
-
-            box-sizing: border-box;
-            width: @spinner;
-            height: @spinner;
-            margin-top: (@spinner / -2);
-            margin-left: (@spinner / -2);
-
-            content: '';
-            animation-name: loading;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-
-            border: 2px solid white;
-            border-top-color: transparent !important;
-            border-radius: 50%;
-        }
-    }
-}
-
-@keyframes loading
-{
-    from
-    {
-        transform: rotate(0deg);
-    }
-    to
-    {
-        transform: rotate(360deg);
     }
 }
