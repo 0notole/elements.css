@@ -9,21 +9,20 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="elements.min.css">
         <style>
-        body {
-            position: relative;
-            min-width: 100%;
-        }
+            body {
+                position: relative;
+                min-width: 100%;
+            }
             body:before {
                 content: "";
-                background: #12c2e9;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-top: 33.33%;
-height: 33.33%;
-width: 100%;
-transform: skewY(-10deg);
-position: absolute;
+                background: #12c2e9;
+                background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+                background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+                top: 33.33%;
+                height: 33.33%;
+                width: 100%;
+                transform: skewY(-10deg);
+                position: absolute;
             }
         </style>
     </head>
@@ -68,7 +67,6 @@ position: absolute;
                         <div class="button button_blue">blue</div>
                         <div class="button button_red">Delete</div>
                         <div class="button button_yellow">Warning</div>
-                        <div class="button button_green">OK</div>
 
                         <a href="#" class="button button_blue fa fa-arrow-right"></a>
                     </div>
@@ -91,13 +89,16 @@ position: absolute;
 
                         <div class="col-xs-12 col-md-6 col-lg-4">
                             <div class="card box">
-                                <div class="box title">H1 Main Title</div>
-                                <div class="box title title_small">H2 Smaller</div>
+                                <div class="label box">Demo Label</div>
 
-                                <label class="toggle">
-                                    <input type="checkbox">
-                                    <span>Toggle</span>
-                                </label>
+                                <div class="box tabs">
+                                    <input type="radio" id="option-1" name="options" checked>
+                                    <label for="option-1">First</label>
+                                    <input type="radio" id="option-2" name="options">
+                                    <label for="option-2">Second</label>
+                                    <span class="tabs__glider"></span>
+                                </div>
+                                <div class="button button_green block">Launch</div>
 
                             </div>
                         </div>
@@ -105,8 +106,13 @@ position: absolute;
                             <div class="card box">
                                 <div class="label box">Basic Text</div>
                                 <div class="box_small title">H1 Main Title</div>
-                                <div class="text box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="box title title_small">H2 Smaller</div>
+                                <div class="text box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 
+                                                                <label class="toggle box">
+                                                                    <input type="checkbox">
+                                                                    <span>Toggle</span>
+                                                                </label>
                                 <label class="checkbox">
                                     <input type="checkbox">
                                     <span>Checkbox</span>
