@@ -1,5 +1,7 @@
 .checkbox
 {
+    min-height: 20px;
+
     input
     {
         position: absolute;
@@ -28,6 +30,18 @@
         user-select: none;
 
         .text();
+
+        &:empty
+        {
+            &:after
+            {
+                top: 6px;
+            }
+            &:before
+            {
+                margin-right: 0;
+            }
+        }
 
         &:after
         {
