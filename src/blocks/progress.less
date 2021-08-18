@@ -1,0 +1,33 @@
+.progress
+{
+    position: relative;
+
+    width: 100%;
+    height: (@gap / 6);
+
+    border-radius: @corner;
+    background: none;
+
+    .shadow();
+}
+
+.progress::-webkit-progress-bar
+{
+    height: (@gap / 6);
+    margin: 0 auto;
+
+    border-radius: 15px;
+    background: @light;
+}
+.progress::-webkit-progress-value
+{
+    display: inline-block;
+    float: left;
+
+    height: (@gap / 6);
+
+    transition: width @duration;
+
+    border-radius: @corner;
+    background: @blue;
+}
