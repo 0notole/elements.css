@@ -1,0 +1,82 @@
+@radioSize: 20px;
+
+.radio
+{
+    min-height: 20px;
+
+    input
+    {
+        position: absolute;
+
+        user-select: none;
+
+                appearance: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+    }
+
+    input:checked + span:before
+    {
+        border-color: @blue;
+    }
+
+    input:checked + span:after
+    {
+        position: absolute;
+        top: 5px;
+        left: 2px;
+
+        width: (@radioSize - 8px);
+        height: (@radioSize - 8px);
+
+        content: '';
+
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: @blue;
+    }
+
+    span
+    {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+        user-select: none;
+
+        .text();
+
+        &:empty
+        {
+            &:after
+            {
+                top: 6px;
+            }
+            &:before
+            {
+                margin-right: 0;
+            }
+        }
+
+
+
+        &:before
+        {
+            display: inline-block;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            box-sizing: border-box;
+            width: @radioSize;
+            height: @radioSize;
+            margin-right: (@gap / 4);
+
+            content: '';
+
+            border: 2px solid @grey;
+            border-radius: 50%;
+        }
+    }
+}
