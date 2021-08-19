@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Elements.css by Anatoly Silko</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="elements.css">
+        <style>
+            body {
+                position: relative;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .bg {
+                position: fixed;
+                opacity: .75;
+                background: #12c2e9;
+                background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+                background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+                top: 25%;
+                height: 50%;
+                width: 100%;
+                transform: skewY(-30deg);
+                z-index: -1;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <section class="section">
+            <div class="column">
+                <div class="card blur shadow">
+                    <div class="row middle-xs box">
+                        <div class="col-xs-8">
+                            <h1 class="title">Hello, User</h1>
+                        </div>
+                        <div class="col-xs-4 end-xs flex">
+                            <a href="#" class="button button_white shadow fas fa-search"></a>
+                            <a href="#" class="button button_white shadow indicator fa fa-bell" indicator></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-1">
+                            <div class="sticky">
+                                <a href="#" class="link">Test</a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7">
+                            <div class="card box">
+                                <div class="label box">Your Balance</div>
+                                <div class="title box">£2,024.57</div>
+                            </div>
+                            <div class="tabs box">
+                                <input type="radio" name="tab" id="week" checked>
+                                <label for="week">This Week</label>
+                                <input type="radio" name="tab" id="all-time">
+                                <label for="all-time">All-Time</label>
+                                <div class="tabs__glider"></div>
+                            </div>
+                            <div class="label black box_small">Today</div>
+                            <hr class="hr box_small">
+                            <div class="box">
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-minus red"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">- £100.00</div>
+                                </div>
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-plus green"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">+ £100.00</div>
+                                </div>
+                            </div>
+                            <div class="label black box_small">Yesterday</div>
+                            <hr class="hr box_small">
+                            <div class="box">
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-minus red"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">- £100.00</div>
+                                </div>
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-plus green"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">+ £100.00</div>
+                                </div>
+                            </div>
+                            <div class="label black box_small">Yesterday</div>
+                            <hr class="hr box_small">
+                            <div class="box">
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-minus red"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">- £100.00</div>
+                                </div>
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-plus green"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">+ £100.00</div>
+                                </div>
+                            </div>
+                            <div class="label black box_small">Yesterday</div>
+                            <hr class="hr box_small">
+                            <div class="box">
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-minus red"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">- £100.00</div>
+                                </div>
+                                <div class="flex box_small middle-xs">
+                                    <div class="shadow button button_white fa fa-plus green"></div>
+                                    <div class="flex_grow text">
+                                        <div class="black"><b>Transfer</b></div>
+                                        <small>Description</small>
+                                    </div>
+                                    <div class="end-xs title title_smaller">+ £100.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="sticky">
+                                <div class="card box shadow">
+                                    <div class="label box">PDF Statements</div>
+                                    <div class="tabs">
+                                        <input type="radio" name="transfer" id="mobile" checked>
+                                        <label for="mobile">Mobile</label>
+                                        <input type="radio" name="transfer" id="account">
+                                        <label for="account">Account</label>
+                                        <div class="tabs__glider"></div>
+                                    </div>
+                                </div>
+                                <div class="card box shadow">
+                                    <div class="label box">Quick Settings</div>
+
+                                    <div class="box">
+                                        <div class="box_small flex middle-xs">
+                                            <div class="flex_grow">Auto Brightness</div>
+                                            <label class="toggle box"><input type="checkbox" checked><span></span></label>
+                                        </div>
+                                        <hr class="hr box_small">
+                                        <div class="box_small flex middle-xs">
+                                            <div class="flex_grow">Instant Notifications</div>
+                                            <label class="toggle box" disabled><input type="checkbox" checked><span></span></label>
+                                        </div>
+                                        <hr class="hr box_small">
+                                        <div class="box_small flex middle-xs">
+                                            <div class="flex_grow">Weekly E-mail Reports</div>
+                                            <label class="toggle box"><input type="checkbox"><span></span></label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.button.fa-search').click(function (e) {
+                    e.preventDefault();
+                    $(this).removeClass('fa-search fas').html("Search").attr('disabled', 'disabled');
+                });
+                $('.button').not('.fa-search').click(function (e) {
+                    e.preventDefault();
+                    $(this).addClass('loading');
+                });
+            });
+        </script>
+    </body>
+</html>
