@@ -32,6 +32,13 @@
     {
         padding-right: (@gap / 2);
         padding-left: (@gap / 2);
+
+        transition: padding @duration;
+
+        .sm({
+            padding-right: (@gap / 4);
+            padding-left: (@gap / 4);
+        });
     }
 }
 
@@ -40,4 +47,11 @@
 {
     margin-right: (@gap / -2);
     margin-left: (@gap / -2);
+
+    transition: margin @duration;
+
+    .sm({
+        margin-right: (@gap / -4);
+        margin-left: (@gap / -4);
+    });
 }

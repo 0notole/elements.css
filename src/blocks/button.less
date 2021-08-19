@@ -24,6 +24,7 @@
     text-decoration: none;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-overflow: clip;
 
     color: white;
     border: 0;
@@ -44,7 +45,9 @@
     .button(yellow, @yellow);
     .button(green, @green);
 
-    &.fa
+    &.fa,
+    &.fas,
+    &.far
     {
         flex-grow: 0;
         flex-shrink: 0;
