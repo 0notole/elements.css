@@ -27,7 +27,24 @@
     height: (@gap / 6);
 
     transition: width @duration;
+    animation-name: progress-bar;
+    animation-duration: 1s;
 
     border-radius: @corner;
     background: @blue;
+
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes progress-bar
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        // transform: translate(0);
+    }
 }

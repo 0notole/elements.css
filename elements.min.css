@@ -567,8 +567,24 @@ h5:not(.box):not(.box_small) {
   height: 7.5px;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
+  -webkit-animation-name: progress-bar;
+          animation-name: progress-bar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   border-radius: 20px;
   background: #007cbe;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes progress-bar {
+  from {
+    width: 0;
+  }
+}
+@keyframes progress-bar {
+  from {
+    width: 0;
+  }
 }
 .radio {
   min-height: 20px;
