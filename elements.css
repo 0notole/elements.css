@@ -52,6 +52,11 @@ body {
   color: #606f80;
   background-color: #f1f4f8;
 }
+* {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 h1,
 h2,
 h3,
