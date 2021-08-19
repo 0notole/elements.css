@@ -7,11 +7,15 @@
         flex-grow: 1;
     }
 
-    & > div
+    & > *
     {
         &:not(:last-child)
         {
             margin-right: (@gap / 2);
+
+            .xs({
+                margin-right: (@gap / 4);
+            });
         }
     }
 }
