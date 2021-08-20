@@ -3,6 +3,10 @@
     &:not(.box):not(.box_small)
     {
         margin-bottom: (-1 * @gap);
+
+        .sm({
+            margin-bottom: (-.5 * @gap);
+        });
     }
     &.box,
     &.box_small
@@ -11,7 +15,12 @@
     }
     & > div
     {
+        height: auto;
         margin-bottom: (@gap);
+
+        .sm({
+            margin-bottom: (.5 * @gap);
+        });
 
         & > .card:first-child:last-child
         {

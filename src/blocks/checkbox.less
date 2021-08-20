@@ -1,5 +1,7 @@
 .checkbox
 {
+    display: block;
+
     min-height: 20px;
 
     input
@@ -13,10 +15,17 @@
            -moz-appearance: none;
     }
 
-    input:checked + span:before
+    input:checked + span
     {
-        border-color: @green;
-        background-color: @green;
+        &:before
+        {
+            border-color: @green;
+            background-color: @green;
+        }
+        &:after
+        {
+            opacity: 1;
+        }
     }
 
     span
@@ -46,15 +55,17 @@
         &:after
         {
             position: absolute;
-            top: 9px;
+            top: 50%;
             left: 5px;
 
             width: 8px;
             height: 4px;
+            margin-top: -4px;
 
             content: '';
             transform: rotate(-45deg);
 
+            opacity: 0;
             border-bottom: 2px solid white;
             border-left: 2px solid white;
         }
