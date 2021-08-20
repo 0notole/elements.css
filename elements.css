@@ -45,6 +45,9 @@
 .black {
   color: #292f36 !important;
 }
+.blue {
+  color: #007cbe !important;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -89,6 +92,12 @@ h5:not(.box):not(.box_small) {
 }
 .box_small:not(:last-child) {
   margin-bottom: 22.5px;
+}
+.box2x:not(:last-child) {
+  margin-bottom: 90px;
+}
+.box3x:not(:last-child) {
+  margin-bottom: 135px;
 }
 .button {
   font-size: 12px;
@@ -230,6 +239,7 @@ h5:not(.box):not(.box_small) {
   }
 }
 .checkbox {
+  display: block;
   min-height: 20px;
 }
 .checkbox input {
@@ -245,6 +255,9 @@ h5:not(.box):not(.box_small) {
 .checkbox input:checked + span:before {
   border-color: #00af54;
   background-color: #00af54;
+}
+.checkbox input:checked + span:after {
+  opacity: 1;
 }
 .checkbox span {
   position: relative;
@@ -265,12 +278,14 @@ h5:not(.box):not(.box_small) {
 }
 .checkbox span:after {
   position: absolute;
-  top: 9px;
+  top: 50%;
   left: 5px;
   width: 8px;
   height: 4px;
+  margin-top: -4px;
   content: '';
   transform: rotate(-45deg);
+  opacity: 0;
   border-bottom: 2px solid white;
   border-left: 2px solid white;
 }
@@ -288,6 +303,7 @@ h5:not(.box):not(.box_small) {
 }
 .column {
   box-sizing: border-box;
+  width: 100%;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -551,7 +567,7 @@ h5:not(.box):not(.box_small) {
   border-top: 1px solid rgba(96, 111, 128, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.hr:not(.box):not(.box_small) {
+.hr:not(.box):not(.box_small):not(.box2x):not(.box3x) {
   margin-bottom: 0;
 }
 .indicator {
@@ -784,12 +800,23 @@ h5:not(.box):not(.box_small) {
 .row:not(.box):not(.box_small) {
   margin-bottom: -45px;
 }
+@media (max-width: 64em) {
+  .row:not(.box):not(.box_small) {
+    margin-bottom: -22.5px;
+  }
+}
 .row.box,
 .row.box_small {
   margin-bottom: 0;
 }
 .row > div {
+  height: auto;
   margin-bottom: 45px;
+}
+@media (max-width: 64em) {
+  .row > div {
+    margin-bottom: 22.5px;
+  }
 }
 .row > div > .card:first-child:last-child {
   height: 100%;
@@ -940,6 +967,9 @@ h5:not(.box):not(.box_small) {
   .title_smaller {
     font-size: 16.5px;
   }
+}
+.toggle {
+  display: block;
 }
 .toggle input {
   position: absolute;
