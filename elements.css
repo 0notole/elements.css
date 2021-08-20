@@ -645,7 +645,16 @@ h5:not(.box):not(.box_small) {
 }
 .text a > i,
 .link > i {
-  font-size: 0.8em;
+  font-size: 0.75em;
+  vertical-align: baseline;
+}
+.text a > i:last-child,
+.link > i:last-child {
+  margin-left: 5px;
+}
+.text a > i:first-child,
+.link > i:first-child {
+  margin-right: 5px;
 }
 .loading {
   position: relative;

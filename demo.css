@@ -23,9 +23,14 @@ body {
     top: -40px;
 }
 code {
-    border-left: 5px solid teal;
+    border-left: 5px solid #12c2e9;
     font-family: monospace;
     color: teal;
     display: block;
     padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    line-height: 150%;
+    overflow: auto;
+    white-space: nowrap;
 }

@@ -2,7 +2,11 @@ $(document).ready(function () {
     $("code").each(function () {
 
         var code = $(this).html();
-        var replaced = code.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '<br>').replace(/\s/g, '&nbsp;');
+
+        var shift = code.match(/^\s{0,100}/)[0].length;
+        console.log(shift);
+
+        var replaced = code.trim().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '<br>').replace(/\s/g, '&nbsp;');
 
         $(this).html(replaced);
 
