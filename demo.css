@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg {
+    position: fixed;
+    opacity: .666;
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    top: 25%;
+    height: 50%;
+    width: 100%;
+    transform: skewY(-30deg);
+    z-index: -1;
+    pointer-events: none;
+}
+.anchor {
+    position: relative;
+    top: -40px;
+}
+code {
+    border-left: 5px solid teal;
+    font-family: monospace;
+    color: teal;
+    display: block;
+    padding: 10px 20px;
+}
