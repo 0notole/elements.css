@@ -4,8 +4,324 @@
         <meta charset="utf-8">
         <title>Elements.css by Anatoly Silko</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="elements.css">
+        <link rel="stylesheet" href="demo.css">
     </head>
     <body>
+        <div class="section column">
+            <div class="card blur">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-lg-3">
+                        <div class="sticky text">
 
+                            <div class="box">
+                                <div class="title title_smaller box_small">Intro</div>
+                                <ul>
+                                    <li><a scroll class="link" href="#about"><span>About</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#installation"><span>Installation</span><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <div class="title title_smaller box_small">Elements</div>
+                                <ol>
+                                    <li><a scroll class="link" href="#button"><span>Button</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#card"><span>Card</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#checkbox"><span>Checkbox</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#column"><span>Column</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#hr"><span>Hr</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#input"><span>Input</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#label"><span>Label</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#link"><span>Link</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#progress"><span>Progress</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#radio"><span>Radio</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#section"><span>Section</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#tabs"><span>Tabs</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#title"><span>Title</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#toggle"><span>Toggle</span><i class="fas fa-link"></i></a></li>
+                                </ol>
+                            </div>
+
+                            <div class="box">
+                                <div class="title title_smaller box_small">Helpers</div>
+                                <ul>
+                                    <li><a scroll class="link" href="#blur"><span>blur</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#box"><span>box</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#flex"><span>flex</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#flexboxgrid"><span>flexboxgrid</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#indicator"><span>indicator</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#loading"><span>loading</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#row"><span>row</span><i class="fas fa-link"></i></a></li>
+                                    <li><a scroll class="link" href="#sticky"><span>sticky</span><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-xs-12 col-sm-8 col-lg-9">
+
+                        <div class="box3x flex middle-xs">
+                            <!-- <i class="fas fa-angle-right"></i> -->
+                            <code>npm install 0notole/elements</code>
+                        </div>
+
+
+                        <!-- ELEMENTS -->
+                        <hr class="hr box3x">
+
+
+                        <!-- Button -->
+                        <div class="anchor" id="button"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Button</div>
+                                <a scroll href="#button" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="flex">
+                                <div class="button">Basic Button</div>
+                                <div class="button button_green">OK Button</div>
+                                <div class="button button_blue"><span>With Icon</span><i class="fa fa-rocket"></i></div>
+                                <button class="button button_white shadow fa fa-laptop"></button>
+                            </div>
+                        </div>
+                        <!-- Button -->
+
+
+                        <!-- Card -->
+                        <div class="anchor" id="card"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Card</div>
+                                <a scroll href="#card" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="row middle-xs">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs">Basic Card</div></div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs shadow">Basic Card with Shadow</div></div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs blur">Blurred Card</div></div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+
+                        <div class="box3x" id="checkbox">
+                            <div class="box title title_smaller">Checkbox (.checkbox)</div>
+                            <div class="row middle-xs">
+                                <div class="col-xs-12 col-sm-6">
+                                    <label class="checkbox box_small"><input type="checkbox" checked><span>Ticked by Default</span></label>
+                                    <label class="checkbox box_small"><input type="checkbox"><span>Unticked by Default</span></label>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <label class="checkbox box_small" disabled><input type="checkbox" checked><span>Disabled Checkbox</span></label>
+                                    <label class="checkbox box_small" disabled><input type="checkbox"><span>Disabled Checkbox</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box3x" id="column">
+                            <div class="box title title_smaller">column</div>
+                        </div>
+                        <div class="box3x" id="flex">
+                            <div class="box title title_smaller">flex</div>
+                        </div>
+                        <div class="box3x" id="flexboxgrid">
+                            <div class="box title title_smaller">flexboxgrid</div>
+                        </div>
+                        <div class="box3x" id="hr">
+                            <div class="box title title_smaller">hr</div>
+                            <div class="hr"></div>
+                        </div>
+                        <div class="box3x" id="input">
+                            <div class="box title title_smaller">input</div>
+                        </div>
+
+
+                        <!-- Label -->
+                        <div class="anchor" id="label"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Label</div>
+                                <a scroll href="#label" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="label box_small">Test Label</div>
+                            <code>
+                                <div class="label">Test Label</div>
+                            </code>
+                        </div>
+                        <!-- Label -->
+
+
+                        <div class="box3x" id="link">
+                            <div class="box title title_smaller">Link (.link)</div>
+                            <!-- <a href="#" class="link">Test link</a> -->
+                            <div class="text">Or any link within a .text block.</div>
+                        </div>
+                        <div class="box3x" id="progress">
+                            <div class="box title title_smaller">progress</div>
+                            <progress value="33" max="100" class="progress"></progress>
+                        </div>
+                        <div class="box3x" id="radio">
+                            <div class="box title title_smaller">radio</div>
+                        </div>
+                        <div class="box3x" id="row">
+                            <div class="box title title_smaller">row</div>
+                        </div>
+                        <div class="box3x" id="section">
+                            <div class="box title title_smaller">section</div>
+                        </div>
+
+
+                        <!-- Tabs -->
+                        <div class="anchor" id="tabs"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Tabs</div>
+                                <a scroll href="#tabs" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="row box_small">
+                                <div class="col-xs-12 col-md-8 col-lg-6">
+                                    <div class="tabs">
+                                        <input name="tabs" type="radio" id="first" checked>
+                                        <label for="first">Option</label>
+                                        <input name="tabs" type="radio" id="second">
+                                        <label for="second">Another</label>
+                                        <div class="tabs__glider"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <code>
+                                <div class="tabs">
+                                    <input name="test" type="radio" id="first" checked>
+                                    <label for="first">Option</label>
+                                    <input name="test" type="radio" id="second">
+                                    <label for="second">Another</label>
+                                    <div class="tabs__glider"></div>
+                                </div>
+                            </code>
+                        </div>
+
+
+                        <!-- Title -->
+                        <div class="anchor" id="title"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Title</div>
+                                <a scroll href="#title" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="box_small">
+                                <div class="box_small title">H1 Title</div>
+                                <div class="box_small title title_small">H2 Title</div>
+                                <div class="box_small title title_smaller">H3 Title</div>
+                            </div>
+                            <code>
+                                <div class="title">H1 Title</div>
+                                <div class="title title_small">H2 Title</div>
+                                <div class="title title_smaller">H3 Title</div>
+                            </code>
+                        </div>
+
+
+                        <!-- Toggle -->
+                        <div class="anchor" id="toggle"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Toggle</div>
+                                <a scroll href="#toggle" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="box">
+                                <label class="toggle box_small">
+                                    <input type="checkbox" checked>
+                                    <span>Ticked by Default</span>
+                                </label>
+                                <code>
+                                    <label class="toggle">
+                                        <input type="checkbox" checked>
+                                        <span>Ticked by Default</span>
+                                    </label>
+                                </code>
+                            </div>
+                        </div>
+
+
+                        <!-- HELPERS -->
+                        <hr class="hr box3x">
+
+
+                        <!-- Blur -->
+                        <div class="anchor" id="blur"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Blur (.blur)</div>
+                                <a scroll href="#blur" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blur -->
+
+
+                        <!-- Box -->
+                        <div class="anchor" id="box"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Box</div>
+                                <a scroll href="#box" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <!-- Box -->
+
+
+                        <!-- Indicator -->
+                        <div class="anchor" id="indicator"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Badge Indicator / Counter</div>
+                                <a scroll href="#indicator" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="box">
+                                <div class="box_small">
+                                    <button class="button button_light shadow indicator" indicator>
+                                        <i class="fa fa-bell"></i>
+                                        <span>Alerts</span>
+                                    </button>
+                                </div>
+                                <code>
+                                    <button class="button button_yellow shadow indicator" indicator>
+                                        <i class="fa fa-bell"></i>
+                                        <span>Alerts</span>
+                                    </button>
+                                </code>
+                            </div>
+                            <div class="box">
+                                <div class="box_small">
+                                    <button class="button button_white shadow fa fa-bell indicator" indicator="3"></button>
+                                </div>
+                                <code>
+                                    <button class="button button_white shadow fa fa-bell indicator" indicator="3"></button>
+                                </code>
+                            </div>
+                        </div>
+                        <!-- Indicator -->
+
+
+                        <!-- Sticky -->
+                        <div class="anchor" id="sticky"></div>
+                        <div class="box3x">
+                            <div class="box flex middle-xs">
+                                <div class="title title_smaller">Sticky Stickiness</div>
+                                <a scroll href="#sticky" class="link"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <!-- Sticky -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="demo.js" charset="utf-8"></script>
     </body>
 </html>
