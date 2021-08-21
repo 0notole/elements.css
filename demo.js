@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Making all the <code> elements visible (with no JS they make no sense)
     // And wrap them into the .relative div to add a copy button
     $("code").show().wrap('<div class="relative"></div>');
-    $(".relative code").after('<button class="button button_transparent far fa-copy"></button>');
+    $(".relative code").after('<button class="button button_transparent far fa-copy" title="Copy to Clipboard"></button>');
 
     // Outputting the source code inside each <code> block
     $("code").each(function () {
