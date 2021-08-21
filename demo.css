@@ -43,3 +43,11 @@ code {
     bottom: 0;
     right: 0;
 }
+
+.placeholder {
+    border: 1px dashed grey;
+    box-sizing: border-box;
+    width: 45px;
+    border-radius: 5px;
+    height: 45px;
+}
