@@ -2,6 +2,10 @@
 
 .radio
 {
+    position: relative;
+
+    display: block;
+
     min-height: 20px;
 
     .no-webkit-appearance();
@@ -25,15 +29,15 @@
     input:checked + span:after
     {
         position: absolute;
-        top: 5px;
-        left: 2px;
+        top: 50%;
+        left: 4px;
 
         width: (@radioSize - 8px);
         height: (@radioSize - 8px);
+        margin-top: (-.5 * (@radioSize - 8px));
 
         content: '';
 
-        border: 2px solid white;
         border-radius: 50%;
         background-color: @blue;
     }

@@ -33,4 +33,13 @@ code {
     line-height: 150%;
     overflow: auto;
     white-space: nowrap;
+    display: none;
+}
+.relative {
+    position: relative;
+}
+.relative .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

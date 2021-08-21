@@ -48,6 +48,9 @@
 .blue {
   color: #007cbe !important;
 }
+.yellow {
+  color: #fbaf00 !important;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -202,6 +205,14 @@ h5:not(.box):not(.box_small) {
   background-color: #00af54 !important;
 }
 .button_green:before {
+  border-color: white !important;
+}
+.button_transparent {
+  color: white;
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+.button_transparent:before {
   border-color: white !important;
 }
 .button.fa,
@@ -750,6 +761,8 @@ h5:not(.box):not(.box_small) {
   }
 }
 .radio {
+  position: relative;
+  display: block;
   min-height: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -770,12 +783,12 @@ h5:not(.box):not(.box_small) {
 }
 .radio input:checked + span:after {
   position: absolute;
-  top: 5px;
-  left: 2px;
+  top: 50%;
+  left: 4px;
   width: 12px;
   height: 12px;
+  margin-top: -6px;
   content: '';
-  border: 2px solid white;
   border-radius: 50%;
   background-color: #007cbe;
 }
