@@ -7,7 +7,6 @@ body {
 }
 .bg {
     position: fixed;
-    opacity: .666;
     background: #12c2e9;
     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
@@ -54,6 +53,10 @@ code {
     width: 45px;
     border-radius: 7px;
     height: 45px;
+}
+.placeholder_medium {
+    width: 300px;
+    max-width: 100%;
 }
 
 .snippet {
