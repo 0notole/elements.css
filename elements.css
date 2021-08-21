@@ -55,11 +55,6 @@ body {
   color: #606f80;
   background-color: #f1f4f8;
 }
-* {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 h1,
 h2,
 h3,
@@ -128,6 +123,9 @@ h5:not(.box):not(.box_small) {
   border-radius: 20px;
   outline: none;
   background-color: #292f36;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (max-width: 48em) {
   .button {
@@ -241,6 +239,9 @@ h5:not(.box):not(.box_small) {
 .checkbox {
   display: block;
   min-height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .checkbox input {
   position: absolute;
@@ -752,6 +753,9 @@ h5:not(.box):not(.box_small) {
 }
 .radio {
   min-height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .radio input {
   position: absolute;
@@ -862,6 +866,9 @@ h5:not(.box):not(.box_small) {
   text-transform: uppercase;
   border-radius: 20px;
   color: #292f36;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .tabs input {
   position: absolute;
@@ -979,6 +986,9 @@ h5:not(.box):not(.box_small) {
 }
 .toggle {
   display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .toggle input {
   position: absolute;
