@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="demo.css">
     </head>
     <body>
-        <div class="section column">
+        <div class="section column column_narrow">
             <div class="card blur">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-lg-3">
@@ -63,9 +63,10 @@
                     <!-- Right -->
                     <div class="col-xs-12 col-sm-8 col-lg-9">
 
-                        <div class="box3x flex middle-xs">
-                            <!-- <i class="fas fa-angle-right"></i> -->
-                            <code>npm install 0notole/elements</code>
+                        <div class="box3x middle-xs">
+                            <div class="box">
+                                <code>npm install 0notole/elements</code>
+                            </div>
                         </div>
 
 
@@ -131,11 +132,18 @@
                                 <div class="title title_smaller">Card</div>
                                 <a scroll href="#card" class="link"><i class="fas fa-link"></i></a>
                             </div>
-                            <div class="row middle-xs">
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs">Basic Card</div></div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs shadow">Basic Card with Shadow</div></div>
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="card center-xs blur">Blurred Card</div></div>
+                            <div class="box_small">
+                                <div class="row middle-xs">
+                                    <div class="col-xs-12 col-sm-6 col-md-4"><div class="card center-xs">Basic Card</div></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4"><div class="card center-xs shadow">With Shadow</div></div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4"><div class="card center-xs blur">Blurred Card</div></div>
+                                </div>
                             </div>
+                            <code>
+                                <div class="card center-xs">Basic Card</div>
+                                <div class="card center-xs shadow">With Shadow</div>
+                                <div class="card center-xs blur">Blurred Card</div>
+                            </code>
                         </div>
                         <!-- Card -->
 

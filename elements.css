@@ -250,9 +250,6 @@ h5:not(.box):not(.box_small) {
 .checkbox {
   display: block;
   min-height: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .checkbox input {
   position: absolute;
@@ -261,6 +258,9 @@ h5:not(.box):not(.box_small) {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .checkbox input:checked + span:before {
   border-color: #00af54;
@@ -326,6 +326,9 @@ h5:not(.box):not(.box_small) {
     padding-right: 22.5px;
     padding-left: 22.5px;
   }
+}
+.column_narrow {
+  max-width: 1280px;
 }
 .flex {
   display: flex;
@@ -569,6 +572,30 @@ h5:not(.box):not(.box_small) {
     margin-left: -11.25px;
   }
 }
+.row:not(.box):not(.box_small) {
+  margin-bottom: -45px;
+}
+@media (max-width: 64em) {
+  .row:not(.box):not(.box_small) {
+    margin-bottom: -22.5px;
+  }
+}
+.row.box,
+.row.box_small {
+  margin-bottom: 0;
+}
+.row > div {
+  height: auto;
+  margin-bottom: 45px;
+}
+@media (max-width: 64em) {
+  .row > div {
+    margin-bottom: 22.5px;
+  }
+}
+.row > div > .card:first-child:last-child {
+  height: 100%;
+}
 .hr {
   margin-top: 0;
   pointer-events: none;
@@ -764,19 +791,13 @@ h5:not(.box):not(.box_small) {
   position: relative;
   display: block;
   min-height: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .radio input {
   position: absolute;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  appearance: none;
+  left: -9999px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
 }
 .radio input:checked + span:before {
   border-color: #007cbe;
@@ -820,30 +841,6 @@ h5:not(.box):not(.box_small) {
   content: '';
   border: 2px solid #606f80;
   border-radius: 50%;
-}
-.row:not(.box):not(.box_small) {
-  margin-bottom: -45px;
-}
-@media (max-width: 64em) {
-  .row:not(.box):not(.box_small) {
-    margin-bottom: -22.5px;
-  }
-}
-.row.box,
-.row.box_small {
-  margin-bottom: 0;
-}
-.row > div {
-  height: auto;
-  margin-bottom: 45px;
-}
-@media (max-width: 64em) {
-  .row > div {
-    margin-bottom: 22.5px;
-  }
-}
-.row > div > .card:first-child:last-child {
-  height: 100%;
 }
 .section {
   box-sizing: border-box;
