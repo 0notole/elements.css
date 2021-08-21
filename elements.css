@@ -245,13 +245,11 @@ h5:not(.box):not(.box_small) {
 }
 .checkbox input {
   position: absolute;
+  left: -9999px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 .checkbox input:checked + span:before {
   border-color: #00af54;
@@ -866,9 +864,6 @@ h5:not(.box):not(.box_small) {
   text-transform: uppercase;
   border-radius: 20px;
   color: #292f36;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .tabs input {
   position: absolute;
@@ -926,6 +921,9 @@ h5:not(.box):not(.box_small) {
   transition: color 0.3s;
   text-align: center;
   border-radius: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .title {
   font-weight: 300;
@@ -992,13 +990,11 @@ h5:not(.box):not(.box_small) {
 }
 .toggle input {
   position: absolute;
+  left: -9999px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 .toggle input:checked + span:after {
   left: 20.5px;
