@@ -664,6 +664,18 @@ h5:not(.box):not(.box_small) {
     transform: scale(1);
   }
 }
+.input {
+  line-height: 45px;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 45px;
+  padding: 0 22.5px;
+  resize: none;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 0 10px 30px rgba(41, 47, 54, 0.05);
+}
 .label {
   font-size: 12px;
   font-weight: bold;

@@ -52,6 +52,8 @@ code {
     box-sizing: border-box;
     width: 45px;
     border-radius: 7px;
+    flex-shrink: 0;
+    flex-grow: 0;
     height: 45px;
 }
 .placeholder_medium {
