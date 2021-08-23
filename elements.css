@@ -126,6 +126,7 @@ h5:not(.box):not(.box_small) {
   border-radius: 20px;
   outline: none;
   background-color: #292f36;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -314,6 +315,7 @@ h5:not(.box):not(.box_small) {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -863,6 +865,7 @@ h5:not(.box):not(.box_small) {
 .radio input {
   position: absolute;
   left: -9999px;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -999,6 +1002,7 @@ h5:not(.box):not(.box_small) {
   transition: color 0.3s;
   text-align: center;
   border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1062,6 +1066,7 @@ h5:not(.box):not(.box_small) {
 }
 .toggle {
   display: block;
+  -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
