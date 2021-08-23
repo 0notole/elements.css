@@ -215,6 +215,62 @@ h5:not(.box):not(.box_small) {
 .button_transparent:before {
   border-color: white !important;
 }
+.button_messenger {
+  color: white;
+  border-color: #0084ff !important;
+  background-color: #0084ff !important;
+}
+.button_messenger:before {
+  border-color: white !important;
+}
+.button_telegram {
+  color: white;
+  border-color: #08c !important;
+  background-color: #08c !important;
+}
+.button_telegram:before {
+  border-color: white !important;
+}
+.button_facebook {
+  color: white;
+  border-color: #3b5998 !important;
+  background-color: #3b5998 !important;
+}
+.button_facebook:before {
+  border-color: white !important;
+}
+.button_vk {
+  color: white;
+  border-color: #45668e !important;
+  background-color: #45668e !important;
+}
+.button_vk:before {
+  border-color: white !important;
+}
+.button_whatsapp {
+  color: white;
+  border-color: #075e54 !important;
+  background-color: #075e54 !important;
+}
+.button_whatsapp:before {
+  border-color: white !important;
+}
+.button_linkedin {
+  color: white;
+  border-color: #0077b5 !important;
+  background-color: #0077b5 !important;
+}
+.button_linkedin:before {
+  border-color: white !important;
+}
+.button_trustpilot {
+  color: white;
+  border-color: #00b67a !important;
+  background-color: #00b67a !important;
+}
+.button_trustpilot:before {
+  border-color: white !important;
+}
 .button.fa,
 .button.fas,
 .button.far {
