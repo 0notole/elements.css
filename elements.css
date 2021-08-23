@@ -307,6 +307,10 @@ h5:not(.box):not(.box_small) {
 .checkbox {
   display: block;
   min-height: 20px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .checkbox input {
   position: absolute;
@@ -315,10 +319,6 @@ h5:not(.box):not(.box_small) {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .checkbox input:checked + span:before {
   border-color: #00af54;
@@ -861,14 +861,14 @@ h5:not(.box):not(.box_small) {
   position: relative;
   display: block;
   min-height: 20px;
-}
-.radio input {
-  position: absolute;
-  left: -9999px;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.radio input {
+  position: absolute;
+  left: -9999px;
 }
 .radio input:checked + span:before {
   border-color: #007cbe;
