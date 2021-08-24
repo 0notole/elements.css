@@ -1,6 +1,6 @@
 {
     "name": "@0notole/elements.css",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "description": "A simple yet powerful frontend UI kit built with CSS blocks, elements and modifiers, and smartly assembled into a lightweight library.",
     "main": "demo.js",
     "dependencies": {
