@@ -48,23 +48,18 @@ $(document).ready(function () {
 
     });
 
-
     $("a[href*=\\#][scroll]").click(function(e) {
-        var href = $(e.target).attr('href');
-        console.log(e.target);
+
+        var href = (e.target.tagName == 'SPAN' || e.target.tagName == 'I') ? $(e.target).parent().attr('href') : $(e.target).attr('href');
 
         if (href != '#') {
 
+            var hash = href.substring(href.indexOf('#')+1);
 
-            var url = $(e.target).attr('href');
-            if (url) {
-                var hash = url.substring(url.indexOf('#')+1);
-                if ($('#' + hash).length) {
-                    $('html, body').animate({
-                        scrollTop: $('#' + hash).offset().top
-                    }, 250);
-                    toggleNav(e, false);
-                }
+            if ($('#' + hash).length) {
+                $('html, body').animate({
+                    scrollTop: $('#' + hash).offset().top
+                }, 250);
             }
 
         }
