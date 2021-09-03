@@ -36,6 +36,15 @@
   pointer-events: none;
   opacity: 0.5;
 }
+.pointer {
+  cursor: pointer !important;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .red {
   color: #f64f59 !important;
 }
