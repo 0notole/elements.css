@@ -26,6 +26,12 @@
   display: block;
   width: 100%;
 }
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
 .nowrap {
   white-space: nowrap;
 }
