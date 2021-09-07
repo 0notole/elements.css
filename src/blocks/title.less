@@ -1,20 +1,19 @@
-.title
+.title,
+.subtitle
 {
     font-weight: 300;
 
     transition: font-size @duration;
 
     color: @black;
+}
 
+.title
+{
     .text-reduction(40px);
+}
 
-    &_small
-    {
-        .text-reduction(30px);
-    }
-
-    &_smaller
-    {
-        .text-reduction(25px);
-    }
+.subtitle
+{
+    .text-reduction(30px);
 }

@@ -1046,10 +1046,13 @@ h5:not(.box):not(.box_small) {
   -moz-appearance: none;
   appearance: none;
 }
-.title {
+.title,
+.subtitle {
   font-weight: 300;
   transition: font-size 0.3s;
   color: #292f36;
+}
+.title {
   font-size: 40px;
 }
 @media (max-width: 75em) {
@@ -1067,40 +1070,22 @@ h5:not(.box):not(.box_small) {
     font-size: 26.4px;
   }
 }
-.title_small {
+.subtitle {
   font-size: 30px;
 }
 @media (max-width: 75em) {
-  .title_small {
+  .subtitle {
     font-size: 26.4px;
   }
 }
 @media (max-width: 64em) {
-  .title_small {
+  .subtitle {
     font-size: 23.1px;
   }
 }
 @media (max-width: 48em) {
-  .title_small {
+  .subtitle {
     font-size: 19.8px;
-  }
-}
-.title_smaller {
-  font-size: 25px;
-}
-@media (max-width: 75em) {
-  .title_smaller {
-    font-size: 22px;
-  }
-}
-@media (max-width: 64em) {
-  .title_smaller {
-    font-size: 19.25px;
-  }
-}
-@media (max-width: 48em) {
-  .title_smaller {
-    font-size: 16.5px;
   }
 }
 .toggle {
