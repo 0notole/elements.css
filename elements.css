@@ -66,6 +66,15 @@
 .yellow {
   color: #fbaf00 !important;
 }
+.flex {
+  display: flex !important;
+}
+.grow {
+  flex-grow: 1 !important;
+}
+.shrink {
+  flex-shrink: 1 !important;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -311,7 +320,7 @@ h5:not(.box):not(.box_small) {
   box-sizing: border-box;
   padding: 45px;
   transition: padding 0.3s;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: white;
 }
 @media (max-width: 64em) {
@@ -843,8 +852,14 @@ h5:not(.box):not(.box_small) {
   z-index: 20;
   top: 50%;
   left: 50%;
+  min-width: 500px;
   transform: translate(-50%, -50%);
   box-shadow: 0 10px 30px rgba(41, 47, 54, 0.05);
+}
+@media (max-width: 48em) {
+  .popup {
+    min-width: 280px;
+  }
 }
 .overlay {
   position: fixed;
