@@ -147,7 +147,7 @@ h5:not(.box):not(.box_small) {
   text-overflow: clip;
   color: white;
   border: 0;
-  border-radius: 20px;
+  border-radius: 22.5px;
   outline: none;
   background-color: #292f36;
   -webkit-tap-highlight-color: transparent;
@@ -997,7 +997,7 @@ h5:not(.box):not(.box_small) {
   white-space: nowrap;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 22.5px;
   color: #292f36;
 }
 .tabs input {
@@ -1044,7 +1044,7 @@ h5:not(.box):not(.box_small) {
   height: inherit;
   transition: transform 0.3s;
   transform: translate(0);
-  border-radius: 20px;
+  border-radius: 22.5px;
   background: #007cbe;
   box-shadow: 0 10px 30px rgba(0, 124, 190, 0.5);
 }
@@ -1055,7 +1055,7 @@ h5:not(.box):not(.box_small) {
   cursor: pointer;
   transition: color 0.3s;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 22.5px;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;

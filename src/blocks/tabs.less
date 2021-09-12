@@ -16,7 +16,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    border-radius: @corner;
+    border-radius: (@gap / 2);
     color: @black;
 
     input
@@ -44,7 +44,7 @@
         transition: transform @duration;
         transform: translate(0);
 
-        border-radius: @corner;
+        border-radius: (@gap / 2);
         background: @blue;
 
         .shadow(@blue, 50%);
@@ -62,7 +62,7 @@
         transition: color @duration;
         text-align: center;
 
-        border-radius: @corner;
+        border-radius: (@gap / 2);
 
         .no-webkit-appearance();
 
