@@ -69,6 +69,49 @@ $(document).ready(function () {
 
 });
 
+Vue.component('list-item', {
+    props: ['item'],
+    methods: {
+        capitalise (str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+    },
+    template: `<li><a scroll class="link" :href="'#' + item"><span>{{ capitalise(item) }}</span><i class="fas fa-link"></i></a></li>`,
+});
+
+const demo = new Vue({
+    el: '#demo',
+    data: {
+        elements: [
+            'button',
+            'card',
+            'checkbox',
+            'column',
+            'hr',
+            'input',
+            'label',
+            'link',
+            'popup',
+            'progress',
+            'radio',
+            'section',
+            'tabs',
+            'title',
+            'toggle',
+        ],
+        helpers: [
+            'blur',
+            'box',
+            'flex',
+            'flexboxgrid',
+            'indicator',
+            'loading',
+            'sticky',
+            'other',
+        ],
+    }
+});
+
 function popup () {
     $('body').append('<div class="overlay" id="overlay"></div><div class="popup" id="demo"><div class="card shadow"><div class="flex middle-xs box"><div class="subtitle grow">Demo Popup</div><button id="close" class="button button_white fa fa-times"></button></div><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div>');
     $("#demo").show(function () {

@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="demo.css">
     </head>
     <body>
-        <div class="section column column_narrow">
+        <div class="section column column_narrow" id="demo">
             <div class="card blur">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-lg-3">
@@ -27,35 +27,14 @@
                             <div class="box">
                                 <div class="subtitle box_small">Elements</div>
                                 <ul>
-                                    <li><a scroll class="link" href="#button"><span>Button</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#card"><span>Card</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#checkbox"><span>Checkbox</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#column"><span>Column</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#hr"><span>Hr</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#input"><span>Input</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#label"><span>Label</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#link"><span>Link</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#popup"><span>Popup</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#progress"><span>Progress</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#radio"><span>Radio</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#section"><span>Section</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#tabs"><span>Tabs</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#title"><span>Title</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#toggle"><span>Toggle</span><i class="fas fa-link"></i></a></li>
+                                    <list-item v-for="element in elements" :item="element"></list-item>
                                 </ul>
                             </div>
 
                             <div class="box">
                                 <div class="subtitle box_small">Helpers</div>
                                 <ul>
-                                    <li><a scroll class="link" href="#blur"><span>Blur</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#box"><span>Box</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#flex"><span>Flex</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#flexboxgrid"><span>Flexboxgrid</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#indicator"><span>Indicator</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#loading"><span>Loading</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#sticky"><span>Sticky</span><i class="fas fa-link"></i></a></li>
-                                    <li><a scroll class="link" href="#other"><span>Other</span><i class="fas fa-link"></i></a></li>
+                                    <list-item v-for="helper in helpers" :item="helper"></list-item>
                                 </ul>
                             </div>
 
@@ -643,6 +622,7 @@
 
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
         <script src="demo.js" charset="utf-8"></script>
 
     </body>
