@@ -113,14 +113,14 @@ const demo = new Vue({
 });
 
 function popup () {
-    $('body').append('<div class="overlay" id="overlay"></div><div class="popup" id="demo"><div class="card shadow"><div class="flex middle-xs box"><div class="subtitle grow">Demo Popup</div><button id="close" class="button button_white fa fa-times"></button></div><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div>');
-    $("#demo").show(function () {
+    $('body').append('<div class="overlay" id="overlay"></div><div class="popup" id="popup"><div class="card shadow"><div class="flex middle-xs box"><div class="subtitle grow">Demo Popup</div><button id="close" class="button button_white fa fa-times"></button></div><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div>');
+    $("#popup").show(function () {
         $("#close, #overlay").click(close);
     });
 }
 
 function close () {
-    $("#overlay, #demo").remove();
+    $("#overlay, #popup").remove();
 }
 
 $(document).on('keyup',function(evt) {
