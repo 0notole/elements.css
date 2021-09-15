@@ -32,8 +32,10 @@ code {
     background-color: rgba(0, 0, 0, .666);
     color: white;
     line-height: 150%;
+    max-width: 100%;
+    word-wrap: break-word;
     overflow: auto;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     font-size: small;
 
     display: none;
