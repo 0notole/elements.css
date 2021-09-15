@@ -699,6 +699,7 @@ h5:not(.box):not(.box_small) {
   height: 12px;
 }
 .indicator:after {
+  font-family: sans-serif;
   font-size: 11px;
   line-height: 18px;
   position: absolute;
