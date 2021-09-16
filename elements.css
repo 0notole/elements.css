@@ -75,6 +75,17 @@
 .shrink {
   flex-shrink: 1 !important;
 }
+.flex {
+  display: flex;
+}
+.flex > *:not(:last-child) {
+  margin-right: 22.5px;
+}
+@media (max-width: 48em) {
+  .flex > *:not(:last-child) {
+    margin-right: 11.25px;
+  }
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -411,20 +422,6 @@ h5:not(.box):not(.box_small) {
 }
 .column_narrow {
   max-width: 1280px;
-}
-.flex {
-  display: flex;
-}
-.flex_grow {
-  flex-grow: 1;
-}
-.flex > *:not(:last-child) {
-  margin-right: 22.5px;
-}
-@media (max-width: 48em) {
-  .flex > *:not(:last-child) {
-    margin-right: 11.25px;
-  }
 }
 .col-xs,
 .col-sm,

@@ -89,3 +89,20 @@
 {
     flex-shrink: 1 !important;
 }
+
+.flex
+{
+    display: flex;
+
+    & > *
+    {
+        &:not(:last-child)
+        {
+            margin-right: (@gap / 2);
+
+            .xs({
+                margin-right: (@gap / 4);
+            });
+        }
+    }
+}
