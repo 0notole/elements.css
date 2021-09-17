@@ -22,6 +22,11 @@
 .shadow {
   box-shadow: 0 10px 30px rgba(41, 47, 54, 0.05);
 }
+.blur {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  -webkit-backdrop-filter: blur(45px);
+  backdrop-filter: blur(45px);
+}
 .block {
   display: block;
   width: 100%;
@@ -114,11 +119,6 @@ h5:not(.box):not(.box_small) {
 ::selection {
   color: #292f36;
   background: #4ecdc4;
-}
-.blur {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-  -webkit-backdrop-filter: blur(45px);
-  backdrop-filter: blur(45px);
 }
 .box:not(:last-child) {
   margin-bottom: 45px;
