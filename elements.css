@@ -135,6 +135,9 @@ h5:not(.box):not(.box_small) {
 .box3x:not(:last-child) {
   margin-bottom: 135px;
 }
+.box4x:not(:last-child) {
+  margin-bottom: 180px;
+}
 .button {
   font-size: 12px;
   font-weight: bold;
