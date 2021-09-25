@@ -32,13 +32,13 @@
   width: 100%;
 }
 .inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 .inline {
-  display: inline;
+  display: inline !important;
 }
 .nowrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
 .text {
   line-height: 175%;
@@ -51,10 +51,10 @@
   cursor: pointer !important;
 }
 .absolute {
-  position: absolute;
+  position: absolute !important;
 }
 .relative {
-  position: relative;
+  position: relative !important;
 }
 .red {
   color: #f64f59 !important;
