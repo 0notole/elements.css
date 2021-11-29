@@ -976,10 +976,10 @@ h5:not(.box):not(.box_small) {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.section_light {
+.section-light {
   background-color: #f1f4f8;
 }
-.section + .section:not(.section_light) {
+.section + .section:not(.section-light) {
   padding-top: 0;
 }
 .sticky {

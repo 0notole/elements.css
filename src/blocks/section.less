@@ -1,15 +1,19 @@
 .section
 {
-    box-sizing: border-box;
-    padding-top: (@gap * 2);
-    padding-bottom: (@gap * 2);
+    &,
+    &-light
+    {
+        box-sizing: border-box;
+        padding-top: (@gap * 2);
+        padding-bottom: (@gap * 2);
+    }
 
-    &_light
+    &-light
     {
         background-color: @light;
     }
 
-    & + .section:not(.section_light)
+    & + .section:not(.section-light)
     {
         padding-top: 0;
     }
