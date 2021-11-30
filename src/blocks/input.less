@@ -1,21 +1,25 @@
 .input
 {
-    line-height: @gap;
+    &,
+    &-textarea
+    {
+        line-height: @gap;
 
-    box-sizing: border-box;
-    max-width: 100%;
-    height: @gap;
-    padding: 0 (@gap / 2);
+        box-sizing: border-box;
+        max-width: 100%;
+        height: @gap;
+        padding: 0 (@gap / 2);
 
-    resize: none;
+        resize: none;
 
-    border: 0;
-    border-radius: @corner;
-    outline: none;
+        border: 0;
+        border-radius: @corner;
+        outline: none;
 
-    .shadow();
+        .shadow();
+    }
 
-    &_textarea
+    &-textarea
     {
         line-height: normal;
 
