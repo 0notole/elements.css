@@ -18,21 +18,21 @@
                         <div class="sticky text">
 
                             <div class="box">
-                                <div class="subtitle box_small">Intro</div>
+                                <div class="subtitle box-small">Intro</div>
                                 <ul>
                                     <li><a scroll class="link" href="#about"><span>About</span><i class="fas fa-link"></i></a></li>
                                     <li><a scroll class="link" href="#install"><span>Installation</span><i class="fas fa-link"></i></a></li>
                                 </ul>
                             </div>
                             <div class="box">
-                                <div class="subtitle box_small">Elements</div>
+                                <div class="subtitle box-small">Elements</div>
                                 <ul>
                                     <list-item v-for="element in elements" :item="element"></list-item>
                                 </ul>
                             </div>
 
                             <div class="box">
-                                <div class="subtitle box_small">Helpers</div>
+                                <div class="subtitle box-small">Helpers</div>
                                 <ul>
                                     <list-item v-for="helper in helpers" :item="helper"></list-item>
                                 </ul>
@@ -44,7 +44,7 @@
                     <!-- Right -->
                     <div class="col-xs-12 col-sm-8 col-lg-9">
 
-                        <div class="flex box3x middle-xs">
+                        <div class="flex box-larger middle-xs">
                             <div class="title grow">Elements.css</div>
                             <a class="github-button" href="https://github.com/0notole/elements" data-icon="octicon-star" data-show-count="true" aria-label="Star 0notole/elements on GitHub">Star</a>
                         </div>
@@ -69,7 +69,7 @@
                             <li><a href="https://fontawesome.com" target="_blank">Fontawesome</a> for some fantastic icons.</li>
                         </ul>
 
-                        <div class="text box3x">
+                        <div class="text box-larger">
                             These packages are present on this page for the sake of an extensive demo.
                         </div>
 
@@ -86,14 +86,14 @@
 
                         <code class="box">npm i @0notole/elements.css</code>
 
-                        <div class="text box3x">
+                        <div class="text box-larger">
                             You also have the option of downloading <span class="snippet">elements.min.css</span> and including it into your project manually. Stay tuned for CDN!
                         </div>
 
 
 
                         <div class="anchor" id="button"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Button</div>
                                 <a scroll href="#button" class="link"><i class="fas fa-link"></i></a>
@@ -106,13 +106,13 @@
 
                             <div class="row box">
                                 <div class="col-xs-12 col-lg-6">
-                                    <button class="button box_small">Basic Button</button>
+                                    <button class="button box-small">Basic Button</button>
                                     <code>
                                         <button class="button">Basic Button</button>
                                     </code>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
-                                    <button class="button button_green box_small">OK</button>
+                                    <button class="button button_green box-small">OK</button>
                                     <code>
                                         <button class="button button_green">OK</button>
                                     </code>
@@ -123,7 +123,7 @@
 
 
                                 <div class="col-xs-12 col-lg-6">
-                                    <button class="button button_blue box_small">
+                                    <button class="button button_blue box-small">
                                         <span>With Icon</span>
                                         <i class="fa fa-rocket"></i>
                                     </button>
@@ -136,7 +136,7 @@
                                 </div>
 
                                 <div class="col-xs-12 col-lg-6">
-                                    <button class="box_small button fa fa-laptop"></button>
+                                    <button class="box-small button fa fa-laptop"></button>
                                     <code>
                                         <button class="button fa fa-laptop"></button>
                                     </code>
@@ -147,7 +147,7 @@
 
 
                         <div class="anchor" id="card"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Card</div>
                                 <a scroll href="#card" class="link"><i class="fas fa-link"></i></a>
@@ -155,7 +155,7 @@
                             <div class="text box">
                                 A card is a white block for displaying content. Might be blurred by using the <span class="snippet">.blur</span> helper class.
                             </div>
-                            <div class="box_small">
+                            <div class="box-small">
                                 <div class="row middle-xs">
                                     <div class="col-xs-12 col-sm-6 col-md-4"><div class="card center-xs">Basic Card</div></div>
                                     <div class="col-xs-12 col-sm-6 col-md-4"><div class="card center-xs shadow">With Shadow</div></div>
@@ -171,7 +171,7 @@
 
 
                         <div class="anchor" id="checkbox"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Checkbox</div>
                                 <a scroll href="#checkbox" class="link"><i class="fas fa-link"></i></a>
@@ -181,25 +181,25 @@
                             </div>
                             <div class="row middle-xs">
                                 <div class="col-xs-12 col-lg-6">
-                                    <div class="box_small">
-                                        <label class="checkbox box_small">
+                                    <div class="box-small">
+                                        <label class="checkbox box-small">
                                             <input type="checkbox" checked>
                                             <span>Ticked by Default</span>
                                         </label>
                                         <code>
-                                            <label class="checkbox box_small">
+                                            <label class="checkbox box-small">
                                                 <input type="checkbox" checked>
                                                 <span>Ticked by Default</span>
                                             </label>
                                         </code>
                                     </div>
-                                    <div class="box_small">
-                                        <label class="checkbox box_small">
+                                    <div class="box-small">
+                                        <label class="checkbox box-small">
                                             <input type="checkbox">
                                             <span>Unticked by Default</span>
                                         </label>
                                         <code>
-                                            <label class="checkbox box_small">
+                                            <label class="checkbox box-small">
                                                 <input type="checkbox">
                                                 <span>Unticked by Default</span>
                                             </label>
@@ -207,25 +207,25 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
-                                    <div class="box_small">
-                                        <label class="checkbox box_small" disabled>
+                                    <div class="box-small">
+                                        <label class="checkbox box-small" disabled>
                                             <input type="checkbox" checked>
                                             <span>Disabled Checkbox</span>
                                         </label>
                                         <code>
-                                            <label class="checkbox box_small" disabled>
+                                            <label class="checkbox box-small" disabled>
                                                 <input type="checkbox" checked>
                                                 <span>Disabled Checkbox</span>
                                             </label>
                                         </code>
                                     </div>
-                                    <div class="box_small">
-                                        <label class="checkbox box_small" disabled>
+                                    <div class="box-small">
+                                        <label class="checkbox box-small" disabled>
                                             <input type="checkbox">
                                             <span>Disabled Checkbox</span>
                                         </label>
                                         <code>
-                                            <label class="checkbox box_small" disabled>
+                                            <label class="checkbox box-small" disabled>
                                                 <input type="checkbox">
                                                 <span>Disabled Checkbox</span>
                                             </label>
@@ -237,7 +237,7 @@
 
 
                         <div class="anchor" id="column"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Central Column</div>
                                 <a scroll href="#column" class="link"><i class="fas fa-link"></i></a>
@@ -246,7 +246,7 @@
 
 
                         <div class="anchor" id="hr"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Horisontal Line</div>
                                 <a scroll href="#hr" class="link"><i class="fas fa-link"></i></a>
@@ -254,7 +254,7 @@
                             <div class="box text">
                                 Just a normal embossed horisontal line with no margins by default. The <span class="snippet">.box</span> class is available to use with it.
                             </div>
-                            <hr class="hr box_small">
+                            <hr class="hr box-small">
                             <code>
                                 <hr class="hr">
                             </code>
@@ -262,28 +262,28 @@
 
 
                         <div class="anchor" id="input"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Input</div>
                                 <a scroll href="#input" class="link"><i class="fas fa-link"></i></a>
                             </div>
 
                             <div class="box">
-                                <input type="text" class="input shadow box_small" placeholder="Why?">
+                                <input type="text" class="input shadow box-small" placeholder="Why?">
                                 <code>
                                     <input type="text" class="input shadow" placeholder="Why?">
                                 </code>
                             </div>
 
                             <div class="box">
-                                <input type="text" class="input shadow box_small" placeholder="Why?">
+                                <input type="text" class="input shadow box-small" placeholder="Why?">
                                 <code>
                                     <input type="text" class="input shadow" placeholder="Why?">
                                 </code>
                             </div>
 
                             <div class="box">
-                                <textarea class="input-textarea shadow box_small" placeholder="Tell me why?"></textarea>
+                                <textarea class="input-textarea shadow box-small" placeholder="Tell me why?"></textarea>
                                 <code>
                                     <textarea class="input-textarea shadow"></textarea>
                                 </code>
@@ -293,7 +293,7 @@
 
 
                         <div class="anchor" id="label"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Label</div>
                                 <a scroll href="#label" class="link"><i class="fas fa-link"></i></a>
@@ -301,7 +301,7 @@
                             <div class="text box">
                                 This label can be used with inputs and for everything else like labelling cards.
                             </div>
-                            <div class="label box_small">Test Label</div>
+                            <div class="label box-small">Test Label</div>
                             <code>
                                 <div class="label">Test Label</div>
                             </code>
@@ -309,16 +309,16 @@
 
 
                         <div class="anchor" id="link"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box subtitle">Link</div>
                             <div class="box">
-                                <div class="box_small"><a href="#" class="link">Test link</a></div>
+                                <div class="box-small"><a href="#" class="link">Test link</a></div>
                                 <code>
                                     <a href="#" class="link">Test link</a>
                                 </code>
                             </div>
                             <div class="text box">Or any link within a <span class="snippet">.text</span> block:</div>
-                            <div class="text box_small">
+                            <div class="text box-small">
                                 Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt <span class="snippet">test</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </div>
                             <code>
@@ -328,7 +328,7 @@
 
 
                         <div class="anchor" id="popup"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Popup</div>
                                 <a scroll href="#popup" class="link"><i class="fas fa-link"></i></a>
@@ -347,12 +347,12 @@
 
 
                         <div class="anchor" id="progress"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Progress</div>
                                 <a scroll href="#progress" class="link"><i class="fas fa-link"></i></a>
                             </div>
-                            <div class="row box_small">
+                            <div class="row box-small">
                                 <div class="col-xs-12 col-sm-6">
                                     <progress value="33" max="100" class="progress shadow"></progress>
                                 </div>
@@ -364,25 +364,25 @@
 
 
                         <div class="anchor" id="radio"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Radio</div>
                                 <a scroll href="#radio" class="link"><i class="fas fa-link"></i></a>
                             </div>
-                            <label class="radio box_small">
+                            <label class="radio box-small">
                                 <input type="radio" name="radio" checked>
                                 <span>First Option</span>
                             </label>
-                            <label class="radio box_small">
+                            <label class="radio box-small">
                                 <input type="radio" name="radio">
                                 <span>Another Option</span>
                             </label>
                             <code>
-                                <label class="radio box_small">
+                                <label class="radio box-small">
                                     <input type="radio" name="in" checked>
                                     <span>First Option</span>
                                 </label>
-                                <label class="radio box_small">
+                                <label class="radio box-small">
                                     <input type="radio" name="in">
                                     <span>Another Option</span>
                                 </label>
@@ -391,7 +391,7 @@
 
 
                         <div class="anchor" id="section"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Section</div>
                                 <a scroll href="#section" class="link"><i class="fas fa-link"></i></a>
@@ -400,7 +400,7 @@
 
 
                         <div class="anchor" id="tabs"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Tabs</div>
                                 <a scroll href="#tabs" class="link"><i class="fas fa-link"></i></a>
@@ -408,7 +408,7 @@
                             <div class="text box">
                                 Pure-CSS tabs with a sliding element to highlight the active tab. You can use up to 5 tabs:
                             </div>
-                            <div class="row box_small">
+                            <div class="row box-small">
                                 <div class="col-xs-12 col-md-8 col-lg-6">
                                     <div class="tabs">
                                         <input name="tabs" type="radio" id="first" checked>
@@ -432,14 +432,14 @@
 
 
                         <div class="anchor" id="title"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Title</div>
                                 <a scroll href="#title" class="link"><i class="fas fa-link"></i></a>
                             </div>
-                            <div class="box_small">
-                                <div class="box_small title">H1 Title</div>
-                                <div class="box_small subtitle">H2 Title</div>
+                            <div class="box-small">
+                                <div class="box-small title">H1 Title</div>
+                                <div class="box-small subtitle">H2 Title</div>
                             </div>
                             <code>
                                 <div class="title">H1 Title</div>
@@ -449,7 +449,7 @@
 
 
                         <div class="anchor" id="toggle"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Toggle</div>
                                 <a scroll href="#toggle" class="link"><i class="fas fa-link"></i></a>
@@ -458,7 +458,7 @@
                                 The toggle element, as well as the regular checkbox is based on the <span class="snippet">input[type=checkbox]</span> element and <span class="snippet">::before</span> and <span class="snippet">::after</span> pseudo-element of the overarching label.
                             </div>
                             <div class="box">
-                                <label class="toggle box_small">
+                                <label class="toggle box-small">
                                     <input type="checkbox" checked>
                                     <span>Ticked by Default</span>
                                 </label>
@@ -474,7 +474,7 @@
 
 
                         <div class="anchor" id="blur"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Blur</div>
                                 <a scroll href="#blur" class="link"><i class="fas fa-link"></i></a>
@@ -486,7 +486,7 @@
 
 
                         <div class="anchor" id="box"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Box</div>
                                 <a scroll href="#box" class="link"><i class="fas fa-link"></i></a>
@@ -496,8 +496,8 @@
                             </div>
                             <div class="placeholder placeholder_medium box"></div>
                             <div class="box">
-                                <div class="placeholder placeholder_medium box_small"></div>
-                                <div class="placeholder placeholder_medium box_small"></div>
+                                <div class="placeholder placeholder_medium box-small"></div>
+                                <div class="placeholder placeholder_medium box-small"></div>
                             </div>
                             <div class="placeholder placeholder_medium box"></div>
                             <code>
@@ -508,7 +508,7 @@
 
 
                         <div class="anchor" id="flex"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Flex</div>
                                 <a scroll href="#flex" class="link"><i class="fas fa-link"></i></a>
@@ -517,7 +517,7 @@
                                 A small helper class to make anything flex without more complicated columns.
                             </div>
                             <div class="box">
-                                <div class="flex box_small">
+                                <div class="flex box-small">
                                     <div class="placeholder"></div>
                                     <div class="button fa fa-user"></div>
                                     <div class="placeholder"></div>
@@ -534,7 +534,7 @@
 
 
                         <div class="anchor" id="flexboxgrid"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Flexboxgrid</div>
                                 <a scroll href="#flexboxgrid" class="link"><i class="fas fa-link"></i></a>
@@ -546,13 +546,13 @@
 
 
                         <div class="anchor" id="indicator"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Badge Indicator / Counter</div>
                                 <a scroll href="#indicator" class="link"><i class="fas fa-link"></i></a>
                             </div>
                             <div class="box">
-                                <div class="box_small">
+                                <div class="box-small">
                                     <button class="button button_light shadow indicator" indicator>
                                         <i class="fa fa-bell"></i>
                                         <span>Alerts</span>
@@ -566,7 +566,7 @@
                                 </code>
                             </div>
                             <div class="box">
-                                <div class="box_small">
+                                <div class="box-small">
                                     <button class="button button_white shadow fa fa-bell indicator" indicator="3"></button>
                                 </div>
                                 <code>
@@ -577,7 +577,7 @@
 
 
                         <div class="anchor" id="sticky"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Sticky Stickiness</div>
                                 <a scroll href="#sticky" class="link"><i class="fas fa-link"></i></a>
@@ -587,7 +587,7 @@
 
 
                         <div class="anchor" id="other"></div>
-                        <div class="box3x">
+                        <div class="box-larger">
                             <div class="box flex middle-xs">
                                 <div class="subtitle">Other Helper Classes</div>
                                 <a scroll href="#sticky" class="link"><i class="fas fa-link"></i></a>
