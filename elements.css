@@ -177,140 +177,140 @@ h5:not(.box):not(.box-small) {
     padding: 0 22.5px;
   }
 }
-.button_black {
+.button-black {
   color: white;
   border-color: #292f36 !important;
   background-color: #292f36 !important;
 }
-.button_black:before {
+.button-black:before {
   border-color: white !important;
 }
-.button_white {
+.button-white {
   color: #292f36;
   border-color: white !important;
   background-color: white !important;
 }
-.button_white:before {
+.button-white:before {
   border-color: #292f36 !important;
 }
-.button_grey {
+.button-grey {
   color: white;
   border-color: #606f80 !important;
   background-color: #606f80 !important;
 }
-.button_grey:before {
+.button-grey:before {
   border-color: white !important;
 }
-.button_light {
+.button-light {
   color: #292f36;
   border-color: #f1f4f8 !important;
   background-color: #f1f4f8 !important;
 }
-.button_light:before {
+.button-light:before {
   border-color: #292f36 !important;
 }
-.button_teal {
+.button-teal {
   color: #292f36;
   border-color: #4ecdc4 !important;
   background-color: #4ecdc4 !important;
 }
-.button_teal:before {
+.button-teal:before {
   border-color: #292f36 !important;
 }
-.button_blue {
+.button-blue {
   color: white;
   border-color: #007cbe !important;
   background-color: #007cbe !important;
 }
-.button_blue:before {
+.button-blue:before {
   border-color: white !important;
 }
-.button_red {
+.button-red {
   color: white;
   border-color: #f64f59 !important;
   background-color: #f64f59 !important;
 }
-.button_red:before {
+.button-red:before {
   border-color: white !important;
 }
-.button_yellow {
+.button-yellow {
   color: white;
   border-color: #fbaf00 !important;
   background-color: #fbaf00 !important;
 }
-.button_yellow:before {
+.button-yellow:before {
   border-color: white !important;
 }
-.button_green {
+.button-green {
   color: white;
   border-color: #00af54 !important;
   background-color: #00af54 !important;
 }
-.button_green:before {
+.button-green:before {
   border-color: white !important;
 }
-.button_transparent {
+.button-transparent {
   color: white;
   border-color: transparent !important;
   background-color: transparent !important;
 }
-.button_transparent:before {
+.button-transparent:before {
   border-color: white !important;
 }
-.button_messenger {
+.button-messenger {
   color: white;
   border-color: #0084ff !important;
   background-color: #0084ff !important;
 }
-.button_messenger:before {
+.button-messenger:before {
   border-color: white !important;
 }
-.button_telegram {
+.button-telegram {
   color: white;
   border-color: #08c !important;
   background-color: #08c !important;
 }
-.button_telegram:before {
+.button-telegram:before {
   border-color: white !important;
 }
-.button_facebook {
+.button-facebook {
   color: white;
   border-color: #3b5998 !important;
   background-color: #3b5998 !important;
 }
-.button_facebook:before {
+.button-facebook:before {
   border-color: white !important;
 }
-.button_vk {
+.button-vk {
   color: white;
   border-color: #45668e !important;
   background-color: #45668e !important;
 }
-.button_vk:before {
+.button-vk:before {
   border-color: white !important;
 }
-.button_whatsapp {
+.button-whatsapp {
   color: white;
   border-color: #075e54 !important;
   background-color: #075e54 !important;
 }
-.button_whatsapp:before {
+.button-whatsapp:before {
   border-color: white !important;
 }
-.button_linkedin {
+.button-linkedin {
   color: white;
   border-color: #0077b5 !important;
   background-color: #0077b5 !important;
 }
-.button_linkedin:before {
+.button-linkedin:before {
   border-color: white !important;
 }
-.button_trustpilot {
+.button-trustpilot {
   color: white;
   border-color: #00b67a !important;
   background-color: #00b67a !important;
 }
-.button_trustpilot:before {
+.button-trustpilot:before {
   border-color: white !important;
 }
 .button.fa,

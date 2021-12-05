@@ -3,7 +3,7 @@ $(document).ready(function () {
     // Making all the <code> elements visible (with no JS they make no sense)
     // And wrap them into the .relative div to add a copy button
     $("code").show().wrap('<div class="relative"></div>');
-    $(".relative code").after('<button class="button button_transparent far fa-copy" title="Copy to Clipboard"></button>');
+    $(".relative code").after('<button class="button button-transparent far fa-copy" title="Copy to Clipboard"></button>');
 
     // Outputting the source code inside each <code> block
     $("code").each(function () {
@@ -113,7 +113,7 @@ const demo = new Vue({
 });
 
 function popup () {
-    $('body').append('<div class="overlay" id="overlay"></div><div class="popup" id="popup"><div class="card shadow"><div class="flex middle-xs box"><div class="subtitle grow">Demo Popup</div><button id="close" class="button button_white fa fa-times"></button></div><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div>');
+    $('body').append('<div class="overlay" id="overlay"></div><div class="popup" id="popup"><div class="card shadow"><div class="flex middle-xs box"><div class="subtitle grow">Demo Popup</div><button id="close" class="button button-white fa fa-times"></button></div><div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div></div></div>');
     $("#popup").show(function () {
         $("#close, #overlay").click(close);
     });
