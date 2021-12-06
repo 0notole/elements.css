@@ -13,7 +13,8 @@
         background-color: @light;
     }
 
-    & + .section:not(.section-light)
+    &:not(.section-light) + .section:not(.section-light),
+    &.section-light + .section.section-light
     {
         padding-top: 0;
     }
