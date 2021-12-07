@@ -135,9 +135,6 @@ h5:not(.box):not(.box-small) {
 .box-larger:not(:last-child) {
   margin-bottom: 135px;
 }
-.box-larger:not(:last-child) {
-  margin-bottom: 180px;
-}
 .button {
   font-size: 12px;
   font-weight: bold;
@@ -410,7 +407,8 @@ h5:not(.box):not(.box-small) {
   border: 2px solid #606f80;
   border-radius: 5px;
 }
-.column {
+.column,
+.column-narrow {
   box-sizing: border-box;
   width: 100%;
   max-width: 1920px;
@@ -421,12 +419,13 @@ h5:not(.box):not(.box-small) {
   transition: padding 0.3s;
 }
 @media (max-width: 48em) {
-  .column {
+  .column,
+  .column-narrow {
     padding-right: 22.5px;
     padding-left: 22.5px;
   }
 }
-.column_narrow {
+.column-narrow {
   max-width: 1280px;
 }
 .col-xs,
@@ -750,7 +749,8 @@ h5:not(.box):not(.box-small) {
     transform: scale(1);
   }
 }
-.input {
+.input,
+.input-textarea {
   line-height: 45px;
   box-sizing: border-box;
   max-width: 100%;
@@ -762,7 +762,7 @@ h5:not(.box):not(.box-small) {
   outline: none;
   box-shadow: 0 10px 30px rgba(41, 47, 54, 0.05);
 }
-.input_textarea {
+.input-textarea {
   line-height: normal;
   min-height: 135px;
   padding: 22.5px;
@@ -971,7 +971,8 @@ h5:not(.box):not(.box-small) {
   border: 2px solid #606f80;
   border-radius: 50%;
 }
-.section {
+.section,
+.section-light {
   box-sizing: border-box;
   padding-top: 90px;
   padding-bottom: 90px;
@@ -979,7 +980,8 @@ h5:not(.box):not(.box-small) {
 .section-light {
   background-color: #f1f4f8;
 }
-.section + .section:not(.section-light) {
+.section:not(.section-light) + .section:not(.section-light),
+.section.section-light + .section.section-light {
   padding-top: 0;
 }
 .sticky {
