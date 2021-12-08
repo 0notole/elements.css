@@ -74,9 +74,6 @@
 .yellow {
   color: #fbaf00 !important;
 }
-.flex {
-  display: flex !important;
-}
 .grow {
   flex-grow: 1 !important;
 }
@@ -84,7 +81,7 @@
   flex-shrink: 1 !important;
 }
 .flex {
-  display: flex;
+  display: flex !important;
 }
 .flex > *:not(:last-child) {
   margin-right: 22.5px;
