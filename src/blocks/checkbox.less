@@ -1,4 +1,7 @@
-.checkbox
+@radioSize: 20px;
+
+.checkbox,
+.radio
 {
     display: block;
 
@@ -84,6 +87,43 @@
 
             border: 2px solid @grey;
             border-radius: 5px;
+        }
+    }
+}
+
+.radio
+{
+    position: relative;
+
+    input:checked + span:before
+    {
+        border-color: @blue;
+    }
+
+    input:checked + span:after
+    {
+        position: absolute;
+        top: 50%;
+        left: 4px;
+
+        width: (@radioSize - 8px);
+        height: (@radioSize - 8px);
+        margin-top: (-.5 * (@radioSize - 8px));
+
+        content: '';
+
+        border-radius: 50%;
+        background-color: @blue;
+    }
+
+    span
+    {
+        &:before
+        {
+            width: @radioSize;
+            height: @radioSize;
+
+            border-radius: 50%;
         }
     }
 }
